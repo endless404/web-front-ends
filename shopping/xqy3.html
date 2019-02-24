@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘宝详细页</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/show1_6-style.css">
+
+<!-- 导航栏 -->
+<div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav menu-list">
+          <li style="color: #fff;font-size: 30px;margin-top: 10px;margin-left: -150px;"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>耳机工厂</li>
+          <li class="first-top"><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+          <li><a href="xqy.html">电子产品<span class="sr-only">(current)</span></a></li>
+          <li><a href="activity.html">双十二特惠 <span class="sr-only">(current)</span></a></li>
+        <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="find form-control" placeholder="搜索你需要的产品">
+        </div>
+      </form>
+        </ul>
+</div>
+	</head>
+	<body>
+		<div class="showPro">
+			<div class="list-photo">
+				<img src="img/11.png" alt="" class="img-rounded">
+			</div>
+			<div class="list-text">
+				<h3>苹果通用iPhone6/7/8/x/7plus入耳式有线手机耳机XS/XR/MAX原装正品七线控ipad耳塞</h3>
+				<a href="activity.html">看看优惠吧<span class="glyphicon glyphicon-menu-right"></span></a>
+				<h3>￥:1239</h3>
+				<p><span style="opacity: 0.5;">简介</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iPhone是美国苹果公司研发的智能手机系列，搭载苹果公司研发的iOS操作系统</p>
+				<p><span style="opacity: 0.5;">运费</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;各地区包邮</p>
+				<p class="sale"><span>月销售量643</span><span>累计评价623</span></p>
+				<p class="need"><span style="opacity: 0.5;">套餐</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>官方搭配</button></p>
+				<p class="number"><span style="opacity: 0.5;">数量</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<button style="opacity: 0.6;" type="button" class="btn btn-default btn-xs" onclick="clickUP()">
+  					<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+					</button>
+					<input type="text" value="1" id="num">
+					<button style="opacity: 0.6;" type="button" class="btn btn-default btn-xs" onclick="clickDOWN()">
+  					<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+					</button><span style="opacity: 0.5; margin-left: 20px;">库存74件</span></p>
+				<button class="list-button">点击购买</button>
+				<button class="list-button">加入购物车</button>
+			</div>
+		</div>
+
+<!-- 页尾 -->
+ <nav class="navbar navbar-default navbar-top footer" role="navigation">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-8">
+<ul class="nav navbar-nav">
+<li><a><span class="cp" style="color: black;">音域店铺&nbsp;:&nbsp;&nbsp;用声音感受这个世界 </span><span class="ba"><span onclick="window.open('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42010602000219')"></span></span></a></li></ul></div>
+<div class="col-sm-12 col-md-4">
+<ul class="nav navbar-nav navbar-link pull-right">
+<li><a href="#" target="_blank">联系我们 </a></li>
+<li><a href="#" target="_blank">网站首页 </a></li>
+<li><a href="#" target="_blank">在线咨询 </a></li></ul></div></div></div></nav>
+</body>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		function clickUP() {
+			var t = document.getElementById("num");
+    		t.value = parseInt(num.value) + 1;	
+		}
+
+		function clickDOWN() {
+			var t = document.getElementById("num");
+    		t.value = parseInt(num.value) - 1;
+    		if (t.value == 0) {
+    			alert("数量不能为0");
+    		}
+    	}
+	</script>
+</html>

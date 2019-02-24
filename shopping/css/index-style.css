@@ -1,0 +1,50 @@
+
+li{
+    list-style: none;
+}
+ .menu{
+    margin: 0 auto;
+    margin-top: 2px;
+    display: inline-block!important;
+    text-align: center;
+    background-color:#2B2C30FF ;
+}
+.menu .menu-list .first-top{
+	padding-left: 150px;
+}
+.menu .menu-list{
+    float: none; 
+    display: inline-block;
+}
+.menu .menu-list .find{
+	border-radius: 20px;
+}
+.menu .menu-list li a{
+	color: #ffff;
+}
+.menu .menu-list li a:hover{
+	color: #2B2C30FF;
+}
+.lunbo-box{
+	margin-top: 5px;
+}
+.card-list .first-card{
+	padding-left: 10px;
+}
+.card-list .card-box{
+    border-radius: 4px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-right: 63px;
+    float: left;
+}
+.card-list .card-box img{
+	width: 300px;
+	height: 200px;
+}
+.card-list .card-box .caption{
+    text-align: center;
+}
+nav{
+    margin-top: 20px;
+}

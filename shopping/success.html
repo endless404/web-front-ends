@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>领取成功</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/index-style.css">
+</head>
+<div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav menu-list">
+          <li style="color: #fff;font-size: 30px;margin-top: 10px;margin-left: -150px;"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>耳机工厂</li>
+          <li class="first-top"><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+          <li><a href="show.html">电子产品<span class="sr-only">(current)</span></a></li>
+          <li><a href="activity.html">双十二特惠 <span class="sr-only">(current)</span></a></li>
+        <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="find form-control" placeholder="搜索你需要的产品">
+        </div>
+      </form>
+        </ul>
+</div>
+
+<body>
+
+	<h3>领取成功，<span id="war">3</span>秒自动跳转到首页。</h3>
+
+</body>
+<script type="text/javascript">
+//设定倒数秒数
+var t = 3;
+//显示倒数秒数
+function showTime(){
+    document.getElementById('war').innerHTML= t;
+    t -= 1;
+    if(t==0){
+        location.href='index.html';
+    }
+    //每秒执行一次,showTime()
+    setTimeout("showTime()",1000);
+}
+//执行showTime()
+showTime();
+</script>
+</html>
